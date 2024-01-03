@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>Lengkapi Data</title>
+</head>
+<body>
+
+    <div id="form1" class="form-container">
+        <h1>Lengkapi Data</h1>
+    
+        <form action="#" method="post" id="firstForm">
+            <!-- Formulir pertama -->
+            <label for="nip">NIP:</label>
+            <input type="text" id="nip" name="nip" required><br>
+    
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required><br>
+    
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+            <label for="perempuan">Perempuan</label><br>
+    
+            <label for="tempat_lahir">Tempat Lahir:</label>
+            <input type="text" id="tempat_lahir" name="tempat_lahir" required><br>
+    
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br>
+    
+            <button type="button" onclick="showForm('form2')">Next</button>
+        </form>
+    </div>
+
+    <div id="form2" class="form-container" style="display:none;">
+        <h1>Lengkapi Data (Bagian 2)</h1>
+
+        <form action="#" method="post" id="secondForm">
+            <!-- Formulir kedua -->
+            <label for="no_seri">No Seri Pegawai:</label>
+            <input type="text" id="no_seri" name="no_seri" required><br>
+
+            <label for="jabatan">Jabatan:</label>
+            <input type="text" id="jabatan" name="jabatan" required><br>
+
+            <label for="unit_kerja">Unit Kerja:</label>
+            <input type="text" id="unit_kerja" name="unit_kerja" required><br>
+
+            <label for="masa_kerja_lama">Masa Kerja G.Lama:</label>
+            <input type="text" id="masa_kerja_lama" name="masa_kerja_lama" required><br>
+
+            <label for="masa_kerja_baru">Masa Kerja G.Baru:</label>
+            <input type="text" id="masa_kerja_baru" name="masa_kerja_baru" required><br>
+
+            <button type="button" onclick="showForm('form1')">Previous</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="input.js"></script>
+
+</body>
+</html>
